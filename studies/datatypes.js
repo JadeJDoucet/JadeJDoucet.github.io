@@ -19,8 +19,15 @@
 * 3. Primitive vs Complex data types:
 * Summarized, primitive data is a value that is copied and Complex data is a reference.
 * By Copy values are copies of the exact value being passed, whereas By Reference to a complex
-* data type is referring to values or elements stored inside the complex data type. 
+* data type is referring to values or elements stored inside the complex data type.
 */
+//Copy By Value//
+let i = 7;
+/* the value of 7 is copied directly by value since 7 is it's own value. */
+
+//Copy By Reference//
+let j = i;
+/*The value of j is copied from i, which is a reference to the value of 7. */
 
 // Primitive/Simple Data Types //
 
@@ -35,6 +42,9 @@ var bool = true;
 
 // 4. NaN : Not a Number - Belongs to the Number data type //
 typeof NaN; // prints => 'number'
+/*A value can result as NaN when a non-number value is converted to a number. 
+* an example of this would be trying to use parseFloat('string'). 'string' will be NaN.
+*/
 
 // 5. undefined : no-value, uninitialized  //
 undefined
@@ -47,6 +57,9 @@ console.log(num); // prints => null
 
 // 7. Infinity and -Infinity : represents Infinity, a value greater or lesser than any value // 
 console.log(Infinity); // prints => Infinity
+/*Values may result in Infinity when the result of a function is a number greater than or less than
+* any other value. 
+*/
 
 
 // Complex Data Types //

@@ -124,6 +124,8 @@ console.log(firstName.charCodeAt(1)); // prints '111', the unicode for 'o'
 * which can be used to determine alphabetical order
 */
 var theFullName = firstName + 'Johnson';
+//This can also be written as
+firstName += 'Johnson'; //Which will then output => 'JoeJohnSon'
 console.log(theFullName); // prints => 'JoeJohnson'
 console.log('abc' > 'acb'); // prints => false because 'abc' is lower in alphabetical order, 
 // and the unicode will be lower since 'a' is the lowest of the letters

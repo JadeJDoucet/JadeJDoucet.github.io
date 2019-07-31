@@ -8,7 +8,18 @@
 * With conditional statements, we are able to make decisions within our code.
 * IF this statement is true, do this, ELSE IF this one is true, do this, ELSE, do this if 
 * none of the others are true
-* Conditional statements will evaluate the truthiness of a given condition
+* Conditional statements will evaluate the truthiness of a given condition. This in done
+* using boolean values. A conditional statment will always result in either TRUE or FALSE.
+* The first statement, 'if' is the first condition to be evaluated, so there may only be ONE. If the result is false,
+* the code continues to run. The next condition it will run into, will be an 'else if' statement. 
+* This will also give a condition that must be met in order for the program to finish executing 
+* this code. If this ELSE IF statement results in a false, then more else if conditions may be added, 
+* or a final, or default action will take place when no conditions are met. 
+* This final action is defined with 'else'. Since this is the FINAL ACTION to take place, there should only be
+* ONE else inside of your control loop. Inside the body of your else statement, the else
+* should return the final action that is needed for the code to finish running, so NO CONDITION 
+* is needed for an else statement. 
+* If no condition is met and no else statement is provided, nothing will be returned.
 */
 if (true === !true) {
     console.log('That\'s not right');

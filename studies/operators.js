@@ -112,3 +112,31 @@ console.log(eye += 'ball'); // prints => 'Eye ball'
 /* '"Eye" + " " + "ball"' is printed to the console because the variable, eye, contains
 * a space at the end
 */
+
+// 7. Assignment Operators //
+/* Assignment operators assign or bind a value to a variable or to another value*/
+
+let index = 1;
+//A basic assignment of the value of the number 1 to the variable 'index'
+
+index += 2;
+//This operator adds and reassigns the value on the left by the value on the right
+
+index -=2;
+//This operator subtracts and reassigns the value on the left by the value on the right
+
+index++;
+//This is similar to the += operator, but this operator will only increment by 1
+
+index--; 
+//This is similar to the -= operator, but this operator will only decrement by 1
+
+index *= 1;
+//This will multiply and reassign the value on the left by the value on the right
+
+index /=1;
+//This will divide and reassign the value on the left by the value on the right
+
+index %=1; 
+//This will reassign the value on the left to the remainder of the left value, 
+// divided by the right value
