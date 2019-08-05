@@ -26,8 +26,21 @@ let i = 7;
 /* the value of 7 is copied directly by value since 7 is it's own value. */
 
 //Copy By Reference//
-let j = i;
-/*The value of j is copied from i, which is a reference to the value of 7. */
+let array = [];
+/*The value of array refers to an array, which may contain values. You can 
+* refer to the values contained within the array. This also is the same concept
+* for functions and objects. Values assigned inside of these objects are called
+* by reference. */
+let obj = {
+    key: 1
+};
+console.log(obj.key) // prints => 1. This is a call by reference; it refers to the value within the object.
+let keyVal = obj.key; //this is a COPY by REFERENCE. This will refer to the value stored within the object,
+//and copy that value over by reference. If that value is changed, so will the varaible referring to it. 
+keyVal= obj = {
+    key: 2
+}; //This assignment to  a variable WILL ALSO change the original object that it refers to. 
+console.log(obj); // prints => {key: 2}. The original object has been changed. 
 
 // Primitive/Simple Data Types //
 
